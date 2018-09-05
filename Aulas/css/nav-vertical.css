@@ -1,0 +1,45 @@
+/*
+ul{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+li{
+	background: url(../imagens/seta.png) no-repeat left center;
+	padding: 3px 20px;
+
+}
+
+.amarelo{
+	background-color: yellow;
+	margin: 0;
+	padding: 0;
+	width: 400px;
+}
+*/
+
+ul{
+	padding: 0;
+	margin: 0px;
+	list-style-type: none;
+}
+
+ul a{
+	text-decoration: none;
+	background: #f7b600 /*Caso falhe a imagem fica uma cor de fundo*/ url(../imagens/menu.png) no-repeat left bottom;
+	width: 200px;
+	height: 40px;
+	display: block;
+	color: #000;
+	text-decoration: none; /*Tira a bolinha do texto */
+	line-height: 40px; /* Altura do Texto - Determinanmos a mesma altura da img (40px) */
+	text-indent: 40px; /* deslocamento horizontal direito do texto "padding do texto" */
+}
+
+a:hover{
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #fff;
+}
+

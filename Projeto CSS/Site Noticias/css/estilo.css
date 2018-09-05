@@ -1,0 +1,236 @@
+body{
+	font:16px Arial, Helvetica, sans-serif;
+	background: #fff url('../imagens/fundo.png') repeat-x;
+
+}
+
+#container{
+	width: 750px;
+	margin: 0 auto;
+} 
+
+#topo{
+	background: url(../imagens/detalhe-topo.png) no-repeat right top;
+	height:150px;
+	padding-top: 25px;
+}
+
+.logo{
+	background: url(../imagens/logo.png) no-repeat;
+	width: 152px;
+	height: 66px;
+	text-indent: -3000px
+}
+
+/******MENU******/
+
+/*Formantando todas ul do site */
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Formantando a ul do topo */
+#topo ul{
+	background: #B10333;
+	float: left;
+}
+
+#topo ul li{
+	float: left;
+}
+	
+/* Divisor no Menu */
+#topo ul a{
+	background: url(../imagens/divisor.png) no-repeat left center;
+	padding: 0.5em 1.5em;
+	font-size: 0.9em;
+	text-decoration: none;
+	line-height: 2em;
+	color: #fff;
+	display: block;
+}
+
+/* Retira o divisor do primeiro menu*/
+#topo ul .primeiro a{ 
+	background: none;
+}
+
+/* Efeito ao passar o mouse */
+#topo ul a:hover{
+	color: #FF0000;
+	background: #FFFFFF;
+}
+
+/****Marcar o menu de acordo com a pagina selecionada****/
+
+body.home #menu a#home,
+body.brasil #menu a#brasil,
+body.internacional #menu a#internacional,
+body.economia #menu a#economia,
+body.saude #menu a#saude,
+body.ciencia #menu a#ciencia,
+body.fotos #menu a#fotos{
+	color: #fff;
+	background: #de003e;
+	cursor: text;
+}
+
+/*****FORMATAR AS COLUNAS*****/
+#conteudo{
+	margin-top: 60px;
+	background: #f5f5f5;
+}
+
+#primeira{
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+
+#primeira img{
+	width: 100%;
+}
+
+#primeira h4{
+	background: red;
+	color: black;
+	display: inline;
+}
+
+#duas-colunas #primeira{
+	width: 555px;
+}
+
+#uma-coluna #primeira{
+	width: 750px;
+	margin: 0 0 20px 0;
+}
+
+#meio{
+	width: 270px;
+	float:left;
+	margin: 0 0 20px 15px;
+}
+
+#meio img{
+	width: 100%;
+}
+
+#meio h4{
+	background: red;
+	color: #fff;
+	display: inline;
+}
+
+#lateral{
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+}
+
+.caixa{
+	background: #f3f3f3 url(../imagens/fundo-caixa.png);
+	margin: 10px 0;
+	padding: 5px;	
+}
+
+h2{
+	font-size: 1em;
+	background: #294c71;
+	color:#fff;
+	padding: 5px;
+	margin-top: 0px;
+
+}
+
+.caixa-conteudo{
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#lateral ul a{
+	text-decoration: none;
+	color: black;
+	line-height: 2.2em;	
+}
+
+#lateral ul a:hover{
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left; 
+	color: gray;
+	padding-left: 20px;
+}
+
+input[type="submit"]{
+	height: 2em;
+	background: #B10333;
+	color: #fff;
+	border: none;		
+}
+
+input[type="submit"]:hover{
+	background: #294c71;
+	color: #fff;		
+}
+
+input[type="text"]{
+	height: 1.6em;
+	width: 85%;
+}
+
+label{
+	cursor: pointer;
+	display: block;
+}
+
+/*****VARIAS NOTICIAS******/
+
+#varias-noticias li{
+	padding: 2px;
+	height: 61px;
+	border-bottom: 1px solid gray;
+}
+
+#varias-noticias ul li{
+	background: #fff;
+	cursor: pointer;
+}
+
+#varias-noticias li:hover{
+	color: green;
+}
+
+#varias-noticias h3{
+	font-size: 0.7em;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 5px;
+}
+
+#varias-noticias p{
+	font-size: 0.8em;
+	margin: 0px 2px;
+}
+
+#varias-noticias img{
+	width: 72px;
+	float: left;
+	margin: 5px;
+}
+
+/****RODAPE****/
+
+#container-rodape{
+	background: #294c71;
+	padding: 20px;
+}
+
+#rodape{
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+

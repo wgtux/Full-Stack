@@ -1,0 +1,34 @@
+body{
+	font-family: sans-serif;
+}
+
+fieldset{
+	width: auto;
+	margin: 1em 0;
+}
+
+legend{
+	font-weight: bold;
+}
+
+label{
+	display: block;
+	cursor: pointer;
+}
+
+input{ /*input[type="text"] = sem suporte para navegador mais antigo*/
+	width: 20em;
+}
+
+textarea{
+	width: 20em;
+	height: 10em;
+}
+
+input.radio, input.submit, input.checkbox{
+	width: auto;
+}
+
+.radio{
+	margin-right: 1em;
+}

@@ -1,0 +1,32 @@
+/* Seletor Universal
+*{
+	border: 1px solid blue;
+}
+*/
+/* SELETOR DE TEXTO */
+h1{
+	color: green;
+}
+
+/* SELETOR CLASSE */
+
+.blue{
+	color: blue;
+}
+
+/* SOMENTE ELEMENTO DA LOCAL */
+
+p.vermelho{
+	color: red;
+}
+
+/* SELETOR CUJO ELEMENTE TENHA O ID #PINK  */
+#pink{
+	color: pink;
+}
+
+/* SELECIONA ELEMENTO FILHO DIRETO */
+li>a{
+	color: red;
+	text-decoration: none;
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Meu Primeiro Projeto</title>
+		<meta charset="utf-8">
+	</head>
+<body>
+		<h2> Listas Não Ordenadas</h2>
+		<!--circle, square e disc-->
+		<ul type="disc">
+			<li>Home</li>
+			<li>Quem Somes</li>
+			<li>Contato</li>
+		</ul>
+
+		<h2>Listas Ordenadas</h2>
+		<!-- Lista Ordenada: 1, A, a, I, i -->
+		<ol type="A">
+			<li>Comida</li>
+			<li>Carro</li>
+			<li>Seriado</li>
+		</ol>
+
+		<h2>Inserindo Imagens</h2>
+		<!-- Colocar tamanho width = largura e height = altura-->
+		<img src="imagens/ferrari.jpg" width="700" height="430">
+
+		<!-- Links-->
+		<a href="index.html">Pagina Principal</a><br>
+
+		<h2>Tabelas</h2>
+		<!-- Tabelas  tr = linhas, td colunas th= titulo tabela -->
+		<table border="2" width="100%">
+			
+			<tr>
+				<th>Codigo</th>
+				<th>Produto</th>
+				<th>Preço</th>
+			</tr>
+
+			<tr>
+				<td>001</td>
+				<td>Notebook</td>
+				<td>R$ 800,00</td>
+			</tr>
+
+			<tr>
+				<td>002</td>
+				<td>Tablet</td>
+				<td>R$ 500,00</td>
+			</tr>
+
+			<tr>
+				<td>003</td>
+				<td><img src="imagens/ferrari.jpg" width="100"></td>
+				<td>R$ 500,00</td>
+			</tr>
+
+			<tr>
+				<td>004</td>
+				<td><a href="index.html">Ferrari02</a></td>
+				<td>R$ 500,00</td>
+			</tr>
+
+			<tr>
+				<td rowspan="2">Desconto</td> <!-- Agrupando 2 linhas -->
+				<td colspan="2">Cupom 01</td> <!-- Agrupando 2 colunas -->
+			</tr>
+
+			<tr>
+				<td colspan="2">cupom 02</td>
+			</tr>
+
+			<tr>
+				<td>Total</td>
+				<td colspan="2"> R$ 2.300,00</td>
+			</tr>
+		</table>
+
+		<h2>Formularios</h2>
+		<h3>Tela de Login</h3>
+		<form>
+			Login: <br>
+			<input type="text" name="login"><br>
+
+			Senha: <br>
+			<input type="password" name="senha"> <br>
+
+			<input type="button" value="Logar">
+		</form>
+
+		<h3>Formulario de Cadastro</h3>
+
+		<form>
+			Nome: 
+			<input type="text" name="nome"><br><br>
+			
+			Sexo: <br>
+			<input type="radio" name="sexo" value="M">Masculino <br>
+			<input type="radio" name="sexo" value="F">Feminino<br><br>
+
+			Interesses<br>
+			<input type="checkbox" name="interesses">Futebol<br>
+			<input type="checkbox" name="interesses">Cursos<br>
+			<input type="checkbox" name="interesses">Moda<br><br>
+
+			Estado<br>
+			<select name="Estado">
+				<option value="sp">SP</option>
+				<option value="rj">RJ</option>
+				<option value="bh">BH</option>
+				<option value="mg">MG</option>
+			</select> <br><br>
+
+			Observações: <br>
+			<textarea></textarea><br>
+			<input type="submit" value="Cadastrar">
+
+
+		</form>
+</body>
+
+</html>

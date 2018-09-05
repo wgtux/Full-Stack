@@ -1,0 +1,57 @@
+
+#principal{
+	width: 720px;
+	margin: 0 auto;
+	
+}
+
+#logo{
+	height: 100px;
+	background: gray;
+	text-align: center;
+	line-height: 100px;
+
+}
+
+#menu{
+	float: left;
+	background: blue;
+	width: 180px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: #fff;
+}
+
+#menu ul{
+	list-style: none;
+	color: #fff;
+}
+
+#menu li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#texto-central{
+	float: right;
+	width: 520px;
+}
+
+#cont-principal{
+	width: 320px;
+	float: left;
+}
+
+#cont-secundario{
+	width: 180px;
+	float: right;
+	background: green;
+}
+
+#rodape{
+	background: gray;
+	padding: 5px;
+	clear: both;
+	text-align: center;
+
+}
