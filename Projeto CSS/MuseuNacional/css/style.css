@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+#container{
+	width: 1280px;
+	height: 100%;
+	background-color: red;
+	display: flex;
+}
+
+header{
+	height: 200px;
+	background: #783c00 url(../img/fundo.png);
+	background-position: center;
+	
+}
