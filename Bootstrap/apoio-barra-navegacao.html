@@ -24,35 +24,229 @@
         justify-content-end
         flex-column
     -->
-    <h2>Navegação simples / abas</h2>
+    <h2 >Navegação simples / abas</h2>
+
+    <ul class="nav nav-tabs justify-content-center ">
+        <li class="nav-item"> 
+            <a href="" class="nav-link">Home</a>
+        </li>
+         <li class="nav-item"> 
+            <a href="" class="nav-link active">Sobre</a>
+        </li>
+         <li class="nav-item"> 
+            <a href="" class="nav-link">Link</a>
+        </li>
+    </ul>
     
 
     <h2>Barra de navegação simples</h2>
     
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        
+        <!--logo-->
+        <a href="" class="navbar-brand">Logo Site</a>
+
+        <!--menus-->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> 
+                <a href="" class="nav-link">Home</a>
+            </li>
+             <li class="nav-item"> 
+                <a href="" class="nav-link active">Sobre</a>
+            </li>
+             <li class="nav-item"> 
+                <a href="" class="nav-link">Link</a>
+            </li>
+         </ul>
+    </nav>
+ 
+    
 
     <h2>Barra de navegação com menu responsivo</h2>
     
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        
+        <!--logo-->
+        <a href="" class="navbar-brand">Logo Site</a>
+
+        <!--Menu Hamburguer (responsivél)-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu-suspenso">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--menus-->
+        <div class="collapse navbar-collapse" id="menu-suspenso">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> 
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                 <li class="nav-item"> 
+                    <a href="" class="nav-link active">Sobre</a>
+                </li>
+                 <li class="nav-item"> 
+                    <a href="" class="nav-link">Link</a>
+                </li>
+             </ul>
+        </div>     
+    </nav>
 
 
     <h2>Barra de navegação com formulário</h2>
     
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        
+        <!--logo-->
+        <a href="" class="navbar-brand">Logo Site</a>
+
+        <!--Menu Hamburguer (responsivél)-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu-suspenso2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--menus-->
+        <div class="collapse navbar-collapse" id="menu-suspenso2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> 
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                 <li class="nav-item"> 
+                    <a href="" class="nav-link active">Sobre</a>
+                </li>
+                 <li class="nav-item"> 
+                    <a href="" class="nav-link">Link</a>
+                </li>
+             </ul>
+
+               <!--Formulario-->
+            <form class="form-inline">
+                <input type="text" class="form-control" placeholder="pesquisar...">
+                <button class="btn btn-outline-success">pesquisar</button>
+            </form>
+        </div>  
+    </nav>
 
     
     <h2>Barra de navegação com menu dropdown</h2>
     
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        
+        <!--logo-->
+        <a href="" class="navbar-brand">Logo Site</a>
+
+        <!--Menu Hamburguer (responsivél)-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#menu-suspenso2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--menus-->
+        <div class="collapse navbar-collapse" id="menu-suspenso2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> 
+                    <a href="" class="nav-link">Home</a>
+                </li>
+                 <li class="nav-item"> 
+                    <a href="" class="nav-link active">Sobre</a>
+                </li>
+                 
+                 <li class="nav-item dropdown"> 
+                    
+                    <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicos</a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Serviço 1</a>
+                        <a href="" class="dropdown-item">Serviço 2</a>
+                        <a href="" class="dropdown-item">Serviço 3</a>
+                        <a href="" class="dropdown-item">Serviço 4</a>
+                    </div>
+                </li>
+             
+             </ul>
+
+               <!--Formulario-->
+            <form class="form-inline">
+                <input type="text" class="form-control" placeholder="pesquisar...">
+                <button class="btn btn-outline-success">pesquisar</button>
+            </form>
+        </div>  
+    </nav>
     
     <!--Cores
     opções: bg-primary, bg-secondary, bg-success, bg-info,
     bg-warning, bg-danger, bg-light, bg-dark
     -->
     <h2>Cores</h2>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+        
+        <!--logo-->
+        <a href="" class="navbar-brand">Logo Site</a>
+
+        <!--menus-->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> 
+                <a href="" class="nav-link">Home</a>
+            </li>
+             <li class="nav-item"> 
+                <a href="" class="nav-link active">Sobre</a>
+            </li>
+             <li class="nav-item"> 
+                <a href="" class="nav-link">Link</a>
+            </li>
+         </ul>
+    </nav>
     
 
     <!--Alinhamentos
     opções: fixed-top, fixed-bottom, sticky
     -->
     <h2>Alinhamentos</h2>
+
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-success">
+        
+        <!--logo-->
+        <a href="" class="navbar-brand">Logo Site</a>
+
+        <!--menus-->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> 
+                <a href="" class="nav-link">Home</a>
+            </li>
+             <li class="nav-item"> 
+                <a href="" class="nav-link active">Sobre</a>
+            </li>
+             <li class="nav-item"> 
+                <a href="" class="nav-link">Link</a>
+            </li>
+         </ul>
+    </nav>
     
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
 
     <h1>Lorem ipsum dolor sit amet</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam. Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
