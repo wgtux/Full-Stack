@@ -11,23 +11,29 @@
            var op = prompt('Digite a operação desejada (soma ou subtração): ')
            var n2 = prompt('Digite o Segundo Numero:')
 
-           n1 = parseInt(n1)
-           n2 = parseInt(n2)
+           n1 = parseFloat(n1)
+           n2 = parseFloat(n2)
 
-           switch(op){
-               case 'soma':
-                r = n1+n2
-               break;
+           function calc (n1, n2, op){
+               var r = 0
 
-               case 'subtração':
-                r = n1-n2
-               break;
+                switch(op){
+                    case 'soma':
+                        r = n1+n2
+                    break;
 
-               default:
-               document.write('Operação Invalida')
+                    case 'subtração':
+                        r = n1-n2
+                    break;
+
+                    default:
+                    document.write('Operação Invalida')
+                }
+
+            return r
            }
 
-           document.write('O resultado da Operação é de : ' +r)
+           document.write('O resultado da Operação é de : ' +calc(n1, n2,op))
 
         </script>
 
