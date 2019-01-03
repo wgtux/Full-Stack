@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+            function modificaEstilo(corDeFundo,l, a){
+                    //COR DE FUNDO
+                    document.getElementById('quadro').style.backgroundColor = corDeFundo
+                    //Largura
+                    document.getElementById('quadro').style.width = l
+                    //Altura
+                    document.getElementById('quadro').style.height = a
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1>Manipulando Estilos de Elementos - DOM</h1>
+
+        <button type="button" onclick="modificaEstilo('#FF0000', '250px', )">Vermelho</button>
+        <button type="button" onclick="modificaEstilo('#00FF00', '180px', '150px')">Verde</button>
+        <button type="button" onclick="modificaEstilo('#0000FF', '200px', '200px')">Azul</button>
+
+        <hr/>
+
+        <div style="border: solid 1px #000; width: 100px; height: 100px;" id="quadro"></div>
+      
+
+    
+    </body>
+</html>
