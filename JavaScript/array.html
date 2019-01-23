@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Array</title>
+        <meta charset="utf-8">
+
+        <script>
+            //Criando array muldimensional
+            var lista  = Array()
+            lista ['frutas'] = Array()
+            lista['pessoas'] =[]
+
+            //inserindo dados no final do array
+            lista ['frutas'].push('Uva')
+            lista ['frutas'].push('Mamão')
+            lista ['frutas'].push('Maçã')
+            lista ['frutas'].push('Banana')
+            lista ['frutas'].push('Laranja')
+            lista ['frutas'].push('Limão')
+
+            //inserindo dados no inicio do array
+            lista['pessoas'].unshift('Weslen')
+            lista['pessoas'].unshift('Flavia')
+            lista['pessoas'].unshift('Alanna')
+            lista['pessoas'].unshift('Aninha')
+            lista['pessoas'].unshift('Mirian')
+
+            //Inserindo nome via browser
+            var nome = prompt('Digite um nome para INSERIR na lista')
+            lista['pessoas'].push(nome)
+           
+
+            //apagando dados no inico do array
+            lista['pessoas'].shift()
+
+            //apagando dados no final do array
+            lista['frutas'].pop()
+
+            //console.log (lista)
+
+            //realizando pesquisa no array
+            var p = prompt('Digite um nome para PESQUISA')
+            var f = prompt('Digite uma Fruta para PESQUISA')
+
+            //Pesquisa no nome
+            var aux = lista['pessoas'].indexOf(p)
+            if (aux == -1){
+                document.write('O Nome não consta no sistema <br><br>')
+            }
+            else{
+                document.write('O nome '+ p + ' esta na lista <br><br>')
+            }           
+
+            //Pesquisa em Frutas
+            var auxFruta = lista['frutas'].indexOf(f)
+            if (auxFruta == -1){
+                document.write('A Fruta não consta no sistema')
+            }
+            else{
+                document.write('A fruta '+ f + ' esta na lista')
+            }
+
+            
+
+
+        </script>
+
+    </head>
+
+    <body>
+    
+    </body>
+</html>
