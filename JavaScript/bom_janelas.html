@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+          var janela
+
+          function abrirJanela() {
+            janela = open('http://www.opticacoreluz.com.br', 'Site Optica')
+          }
+
+          function fecharJanela(){
+              janela.close()
+          }
+        
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <button onclick="abrirJanela()"> Abrir Janela</button>
+        <button onclick="fecharJanela()">Fechar Janela</button>
+        <button onclick="print()">Imprimir</button>
+    
+    </body>
+</html>
