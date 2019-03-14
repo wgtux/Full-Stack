@@ -1,0 +1,62 @@
+/*
+* 
+* @author Weslen Gomes
+*/
+
+/*********Layout**********/
+html, body, #home{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#home{
+    background: url(../img/capa-min.jpg);
+    background-attachment: fixed;
+    width: 100%;    
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/*********Barra de Navegação**********/
+nav.navbar-transparente{
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav.navbar-light .navbar-nav .nav-link{
+    color: white;
+} 
+nav.navbar-light .navbar-nav .nav-link:hover{
+    color: #ff6600ff;
+}
+
+
+/*************Botoões****************/
+.botao-customizado{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+/*
+.botao-laranja{
+    border: 2px solid #ff6600ff;  
+}
+
+.botao-laranja:hover{
+    background-color:#ff6600ff;
+    color: #fff;
+}
+*/
+.capa{
+    text-align: center;
+}
+
+/**************Tipografia***************/
+h1{
+    color: white;
+}
