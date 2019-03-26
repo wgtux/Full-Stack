@@ -21,7 +21,7 @@ html, body, #home{
 }
 
 .contato{
-    background: url(../img/contato-min.jpg);
+    background: url(../img/contato.jpg);
     background-attachment: fixed;
     width: 100%;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body{
 /*********Barra de Navegação**********/
 nav.navbar-transparente{
     padding: 5px 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 nav.navbar-light .navbar-nav .nav-link{
