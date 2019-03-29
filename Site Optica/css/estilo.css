@@ -69,6 +69,11 @@ nav.navbar-light .navbar-nav .nav-link:hover{
     text-align: center;
 }
 
+.btn-espaco{
+    margin-bottom: 20px;
+}
+
+
 /**************Tipografia***************/
 h1{
     color: white;
@@ -82,11 +87,34 @@ h2{
     padding-bottom: 20px;
 }
 p{
-    padding-top: 20px 1px 10px 1px;
+    padding: 1px;
     text-align: center;   
 }
 .branco{
     color: white;
 }
 
-/**************Formulario****************/
+/**************Listas*******************/
+div ul{
+    list-style: none;
+}
+
+div ul li{
+    float: right;
+    margin: 0 10px;
+}
+/**************Rodapé*******************/
+footer{
+    background: #ff6600ff;
+    padding: 15px 0px 8px 0px;
+    position: relative;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    margin: 0 8px; 
+}
