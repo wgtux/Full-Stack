@@ -15,9 +15,18 @@ header{
 }
 
 #home{
-    background: url(../img/capa-min.jpg);
+    background: url(../img/capa.jpg);
     background-attachment: fixed;
     width: 100%;    
+}
+
+#promocao-img{
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.promo-regras{
+    text-align: center;
 }
 
 .secao{
