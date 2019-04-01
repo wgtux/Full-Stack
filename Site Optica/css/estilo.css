@@ -9,6 +9,11 @@ html, body, #home{
     overflow-x: hidden;
 }
 
+header{
+    background: #ff6600ff;
+    text-align: center;
+}
+
 #home{
     background: url(../img/capa-min.jpg);
     background-attachment: fixed;
@@ -35,7 +40,7 @@ body{
 /*********Barra de Navegação**********/
 nav.navbar-transparente{
     padding: 5px 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 nav.navbar-light .navbar-nav .nav-link{
@@ -45,6 +50,10 @@ nav.navbar-light .navbar-nav .nav-link:hover{
     color: #ff6600ff;
 }
 
+nav.navbar-light .navbar-toggler{
+    color: #ff6600ff;;
+    border-color: white;
+}
 
 /*************Botoões****************/
 .botao-customizado{
@@ -55,16 +64,16 @@ nav.navbar-light .navbar-nav .nav-link:hover{
     text-transform: uppercase;
     padding: 10px 20px;
 }
-/*
+
 .botao-laranja{
-    border: 2px solid #ff6600ff;  
+    color: white;  
 }
 
 .botao-laranja:hover{
     background-color:#ff6600ff;
     color: #fff;
 }
-*/
+
 .capa{
     text-align: center;
 }

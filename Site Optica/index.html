@@ -12,7 +12,7 @@
        
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-       
+
         <!--Titulo Site-->       
         <title>Optica Cor&Luz</title> 
        
@@ -24,50 +24,47 @@
     <body>
         <!--Inicio Cabeçallho-->
         <header>
-            <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
-                <div class="container"> <!--Inicio Container-->
-                  
+            <nav class="navbar fixed-top navbar-expand-md navbar-light navbar-transparente">
+                <div class="container"> <!--Inicio Container-->        
                     <!--Logo do Site-->
                     <a href="index.html" class="navbar-brand">
                         <img src="img/logo.png" width="140" height="60" >
                     </a>
-
+                
                     <!--Menu navegador mobile-->   
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                       <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-principal">
+                        <i class="fas fa-bars text white"></i>
                     </button>
-
+                
                     <!--Menu Principal-->
-                    <div class="collapse navbar-collapse" id="nav-principal">
+                    <div id="menu-principal" class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a href="" class="nav-link ">Inicio</a>
+                                <a href="index.html" class="nav-link ">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a href="" class="nav-link">Promoções</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Fale Conosco</a>
+                                <a href="#sobre" class="nav-link">Sobre</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link">Blog</a>
+                                <a href="#fale-conosco" class="nav-link">Fale Conosco</a>
                             </li>
                         </ul>
                     </div> <!--Fim Menu Principal-->
                 </div><!--Fim Container-->
             </nav>
-        </header><!--Fim Cabeçalho-->
-
+                  <!--Fim Menu-->
+        </header>
+   
         <!--SSeção 01-->
         <section id="home" class="d-flex">
             <div class="container align-self-center">
                 <div class="row">
                     <div class="col-md-6 capa">
                         <h1>Todo mês uma promoção para você</h1>
-                        <a href="" class="btn btn-lg botao-customizado btn-outline-warning ">Confira</a>
+                        <a href="promocao.html" class="btn btn-lg botao-customizado btn-outline-warning ">Confira</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +72,7 @@
 
         <!--Seção 02-->
         <section>
-            <div class="container ">
+            <div class="container " id="sobre">
                 <h2>Nossa História</h2>
                 <p>
                 Bom vamos começar…A proprietária sempre trabalhou no ramo Óptico como vendedora e gerente,
@@ -152,7 +149,7 @@
             </section>
 
             <!--Secão 05 Formulario-->
-            <section class="contato">
+            <section class="contato" id="fale-conosco">
                 <div class="container">
                     <h2>Fale Conosco</h2>
                     <div class="row">
@@ -223,11 +220,9 @@
                 </div>
             </footer>
 
-
-    
-
-     <!-- JavaScript-->
-    <script src="js/bootstrap.min.js"></script>
-
+            <!--JavaScript-->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </body>
 </html>
