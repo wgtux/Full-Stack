@@ -1,0 +1,73 @@
+/*
+* 
+* @author Weslen Gomes
+*/
+
+/*********Layout**********/
+html, body, #home{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+}
+
+
+body{
+    font-family: 'Philosopher', sans-serif;
+}
+
+#home{
+    background: url(../img/4.png);
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.top-links {
+    background: #daa520;
+    height: 40px;
+    color: black;
+}
+.top-links ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.top-links ul li a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.preto{
+    color: black;
+}
+
+/**************Listas links*******************/
+.top-links div ul{
+    list-style: none;
+}
+
+.top-links div ul li{
+    float: left;
+    margin: 8px 5px;
+}
+
+/*********Barra de Navegação**********/
+nav.navbar-transparente{
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+nav.navbar-light .navbar-nav .nav-link{
+    color: #daa520;
+} 
+nav.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+}
+
+nav.navbar-light .navbar-toggler{
+    color: #daa520;
+    border-color: white;
+}

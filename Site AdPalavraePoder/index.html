@@ -1,42 +1,120 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        
+<html lang="pt-br">
+    <head>        
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <title>A.D Palavra e Poder</title> <!--Titulo Site-->
+        <!--CSS Personalizado-->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
        
-        <style type="text/css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+       
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-     body{
-         text-align: center;
-     }
-
-     #img1{
-         width: 300px;
-         height: 200px;
-     }
-     #img2{
-         width: 80%;
-     }
+        <!--Google Fontes-->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         
-        </style>
-
+        <!--Titulo Site-->       
+        <title>AD Palavra e Poder</title> 
+       
+        <!--Icone que aparece na aba do navegador-->
+        <link rel="icon" href="img/icone.png"> 
+        
     </head>
 
     <body>
-       <div id="const">
-        <img id="img1" src="img/logo.png">
-         
-        <img id="img2" src="img/construcao.jpg">
+        <!--Barra de links superior-->
+        <section class="top-links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/adpalavraepoder">
+                                    <i class="fab fa-facebook-f preto"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/adpalavraepoder">
+                                    Curta nossa Página</li>
+                                </a>
+                        </ul>
+                    </div>
+                        
+                    <div class="col-md-4">
+                        <ul>
+                            <li><i class="fas fa-envelope"></i></li>
+                            <li>contato@adpalavraepoder.com.br</li>
+                        </ul>
+                    </div>
 
-       </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><i class="fab fa-whatsapp"></i></li>
+                            <li>(19) 99715-4744</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> <!--Fim Barra links-->
+        
+        <!--Menu Cabeçalho-->
+        <header>
+            <nav class="navbar sticky-top navbar-expand-md navbar-light navbar-transparente">
+                <div class="container"> <!--Inicio Container-->        
+                    <!--Logo do Site-->
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.png" width="120" height="60" >
+                    </a>
+                
+                    <!--Menu navegador mobile-->   
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-principal">
+                        <i class="fas fa-bars text white"></i>
+                    </button>
+                
+                    <!--Menu Principal-->
+                    <div id="menu-principal" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link ">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="promocao.html" class="nav-link">Devocional</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#sobre" class="nav-link">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.facebook.com/pg/adpalavraepoder/photos" class="nav-link">Fotos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#fale-conosco" class="nav-link">Fale Conosco</a>
+                            </li>
+                        </ul>
+                    </div> <!--Fim Menu Principal-->
+                </div><!--Fim Container-->
+            </nav><!--Fim Menu-->       
+        </header> <!--Fim Cabeçalho-->
 
-       <div>
+        <!--Seção 01-->
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/logo02.png" width="400px" height="500px">
+                    </div>
+                    <div class="col-md-8">
+                        <h6>Igreja Evangélica Assembléia de Deus</h6>
+                        <h1>Palavra e Poder</h1>
+                        <h5>Semeando a palavra, para expansão d Reino!</h5>
+                    </div>
+                </div>
+            </div>
 
-       </div>
-       
-    
+        </section>
+
     </body>
 </html>
