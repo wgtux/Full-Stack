@@ -18,11 +18,39 @@ body{
     font-family: 'Philosopher', sans-serif;
 }
 
+h2{
+    color: #daa520;
+    text-align: center;
+    padding: 35px 10px;
+}
+
 #home{
-    background: url(../img/4.png);
+    background: url(../img/2.png);
     background-attachment: fixed;
     width: 100%;
+    height: 520px;
     background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+#home h1{
+    font-size: 6em;
+    text-align: center;
+    color: #daa520;
+}
+
+#home h3{
+    text-align: center;
+    color: white;
+}
+
+#home h4{
+    text-align: center;
+    color: white;
+}
+
+.centralizar{
+    padding: 170px;
 }
 
 .top-links {
