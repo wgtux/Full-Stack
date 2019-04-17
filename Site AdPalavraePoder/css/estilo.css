@@ -21,10 +21,14 @@ body{
 h2{
     color: #daa520;
     text-align: center;
-    padding: 35px 10px;
+    padding: 50px 10px 20px 10px;
 }
 
-#home{
+section{
+    padding: 10px 0 20px 0;
+}
+
+.fundo{
     background: url(../img/2.png);
     background-attachment: fixed;
     width: 100%;
@@ -33,20 +37,26 @@ h2{
     overflow-y: hidden;
 }
 
-#home h1{
+.fundo h1{
     font-size: 6em;
     text-align: center;
     color: #daa520;
 }
 
-#home h3{
+.fundo h3{
     text-align: center;
     color: white;
 }
 
-#home h4{
+.fundo h4{
     text-align: center;
     color: white;
+}
+
+.fundo p{
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
 }
 
 .centralizar{
@@ -72,6 +82,11 @@ h2{
     color: black;
 }
 
+/*
+.centralizar{
+    text-align: center;
+}*/
+
 /**************Listas links*******************/
 .top-links div ul{
     list-style: none;
@@ -90,12 +105,25 @@ nav.navbar-transparente{
 
 nav.navbar-light .navbar-nav .nav-link{
     color: #daa520;
+    font-weight: 700;
 } 
 nav.navbar-light .navbar-nav .nav-link:hover{
-    color: white;
+    color: #b8860b;
+    font-style: italic;
 }
 
 nav.navbar-light .navbar-toggler{
     color: #daa520;
     border-color: white;
+}
+
+/***********Seções**********/
+.fundo{
+  background-color: rgba(218, 165, 32, 0.5);
+}
+
+/*******Formulario********/
+.centralizar-rede-social{
+    margin: 0 auto;
+    padding-left: 28%;
 }

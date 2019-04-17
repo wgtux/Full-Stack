@@ -27,7 +27,7 @@
 
     <body>
         <!--Barra de links superior-->
-        <section class="top-links">
+        <header class="top-links">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -59,10 +59,10 @@
                     </div>
                 </div>
             </div>
-        </section> <!--Fim Barra links-->
+        </header> <!--Fim Barra links-->
 
         <!--Seção 01-->
-        <section id="home">
+        <section class="fundo">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
@@ -78,7 +78,6 @@
         </section>
 
         <!--Menu Cabeçalho-->
-        <header>
             <nav class="navbar sticky-top navbar-expand-md navbar-light navbar-transparente">
                 <div class="container"> <!--Inicio Container-->        
                     <!--Logo do Site-->
@@ -116,7 +115,7 @@
                     </div> <!--Fim Menu Principal-->
                 </div><!--Fim Container-->
             </nav><!--Fim Menu-->       
-        </header> <!--Fim Cabeçalho-->
+        
 
         <!--Seção 02-->
         <section class="container">
@@ -151,28 +150,86 @@
             </div>           
         </section>
 
-        <section class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Nossos Cultos</h2>
-                    <ul>
-                        <li>Quarta-Feira - ás 19:30hrs - Culto Público</li>
-                        <li>Sexta-Feira - ás 19:30hrs - Culto de Ensino</li>
-                        <li>Domingo - ás 09:00 - Escola Biblica Dominical</li>
-                        <li>Domingo - ás 19:00 - Culto com a Familia</li>
-                    </ul>
+        <!--Seção 03-->
+        <section class="fundo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Nossos Cultos</h2>
+                            <p>Quarta-Feira - ás 19:30hrs - Culto Público</p>
+                            <p>Sexta-Feira - ás 19:30hrs - Culto de Ensino</p>
+                            <p>Domingo - ás 09:00 - Escola Biblica Dominical</p>
+                            <p>Domingo - ás 19:00 - Culto com a Familia</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2>Nossa localização</h2>
+
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="450" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=r.%20dezenove%20de%20abril%2C%2075%20-%20capela%2C%20vinhedo%20-sp%2C%2013280-000&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>Werbung: <a href="https://www.pureblack.de">pureblack.de</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>   
+                    </div>
                 </div>
-
-                <div class="col-md-6">
-                    <h2>Nossa localização</h2>
-                    <p>Rua 19 de Abril, 21 - Capela - Vinhedo/SP</p>
-
-                </div>
-
             </div>
-
-
         </section>
+
+        <!--Secão 05 Formulario-->
+            <section class="contato" id="fale-conosco">
+                <div class="container">
+                    <h2>Pedido de Oração</h2>
+                    <div class="row">
+                            <div class="col-md-6">
+                                    <p class="branco">
+                                        Estamos sempre prontos para tirar suas duvidas. Então não perca tempo, se preferir ligue para nós, entre em contato pelo Zap ou ainda melhor, venha até a nossa loja nós conhecer e tirar suas duvidas pessoalmente, vai ser um imenso prazer tê-los aqui conosco!
+                                    </p>
+                                    
+                                    <p class="branco"> Tel:  (19) 3309-1353</p>
+                                    <p class="branco">Zap:  (19) 99912-8161</p>
+                                    
+                                    <p class="branco">Endereço:  Rua José Ferragut, 181 - Capela - Vinhedo/SP</p>
+                                
+                                    <!--Redes Sociais-->
+                                    <span class="centralizar-rede-social"> 
+                                        <a href="https://www.instagram.com/opticacoreluz/"><i class="fab fa-instagram fa-2x"></i></a>
+                                    </span>
+        
+                                    <span class="centralizar-rede-social">
+                                        <a href="https://www.facebook.com/opticacoreluz"><i class="fab fa-facebook-square fa-2x"></i></a>
+                                    </span>  <!--Fim redes sociais-->
+                                </div>  
+                        
+                        <div class="col-md-6">
+                            <form>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="branco" for="nome">Nome:	</label>
+                                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label class="branco" for="email">Email:</label>
+                                        <input class="form-control" type="text" name="email" id="email" placeholder="digite seu email">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="branco" for="mensagem">Mensagem:</label>
+                                        <textarea class="form-control" name="mensagem" id="mensagem" rows="5"></textarea>
+                                    </div>
+                                    
+                                    <div class="btn-espaco">
+                                        <input class="btn btn-lg btn-outline-warning" type="submit" value="Enviar" disabled >
+                                    </div>  
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </section
+    
+    <!--JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
     </body>
 </html>
