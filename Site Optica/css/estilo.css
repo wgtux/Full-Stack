@@ -17,7 +17,8 @@ header{
 #home{
     background: url(../img/capa.jpg);
     background-attachment: fixed;
-    width: 100%;    
+    width: 100%;
+    background-repeat: repeat-x;    
 }
 
 #promocao-img{
@@ -38,7 +39,7 @@ header{
     background: url(../img/contato.jpg);
     background-attachment: fixed;
     width: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
 }
 
 
@@ -128,6 +129,11 @@ footer{
     position: relative;
 }
 
+footer p{
+    text-align: center;
+    padding-top: 15px;
+}
+
 footer ul{
     list-style: none;
 }
@@ -135,6 +141,7 @@ footer ul{
 footer ul li{
     float: right;
     margin: 0 8px; 
+    padding-top: 9px;
 }
 
 /*******Formulario********/
