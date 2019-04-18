@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="img/logo02.png" width="400px" height="500px">
+                        <img src="img/logo.png" width="400px" height="500px">
                     </div>
                     <div class="col-md-8 centralizar">
                         <h4>Igreja Evangélica Assembléia de Deus</h6>
@@ -82,7 +82,7 @@
                 <div class="container"> <!--Inicio Container-->        
                     <!--Logo do Site-->
                     <a href="index.html" class="navbar-brand">
-                        <img src="img/logo.png" width="120" height="60" >
+                        <img src="img/logo.png" width="90" height="50" >
                     </a>
                 
                     <!--Menu navegador mobile-->   
@@ -97,19 +97,19 @@
                                 <a href="index.html" class="nav-link ">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a href="promocao.html" class="nav-link">Devocional</a>
+                                <a href="devocional.html" class="nav-link">Devocional</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#sobre" class="nav-link">Sobre</a>
+                                <a href="sobre.html" class="nav-link">Sobre</a>
                             </li>
                             <li class="nav-item">
                                 <a href="https://www.facebook.com/pg/adpalavraepoder/photos" class="nav-link">Fotos</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#fale-conosco" class="nav-link">Contato</a>
+                                <a href="#culto" class="nav-link">Cultos</a>
                             </li>
                              <li class="nav-item">
-                                <a href="#fale-conosco" class="nav-link">Pedido de Oração</a>
+                                <a href="#oracao" class="nav-link">Pedido de Oração</a>
                             </li>
                         </ul>
                     </div> <!--Fim Menu Principal-->
@@ -151,7 +151,7 @@
         </section>
 
         <!--Seção 03-->
-        <section class="fundo">
+        <section class="fundo" id="culto">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -171,30 +171,20 @@
             </div>
         </section>
 
-        <!--Secão 05 Formulario-->
-            <section class="contato" id="fale-conosco">
-                <div class="container">
-                    <h2>Pedido de Oração</h2>
+        <!--Secão 04 Formulario-->
+        <section class="contato" id="oracao">
+            <div class="container">
+                <h2>Pedido de Oração</h2>
                     <div class="row">
-                            <div class="col-md-6">
-                                    <p class="branco">
-                                        Estamos sempre prontos para tirar suas duvidas. Então não perca tempo, se preferir ligue para nós, entre em contato pelo Zap ou ainda melhor, venha até a nossa loja nós conhecer e tirar suas duvidas pessoalmente, vai ser um imenso prazer tê-los aqui conosco!
-                                    </p>
-                                    
-                                    <p class="branco"> Tel:  (19) 3309-1353</p>
-                                    <p class="branco">Zap:  (19) 99912-8161</p>
-                                    
-                                    <p class="branco">Endereço:  Rua José Ferragut, 181 - Capela - Vinhedo/SP</p>
-                                
-                                    <!--Redes Sociais-->
-                                    <span class="centralizar-rede-social"> 
-                                        <a href="https://www.instagram.com/opticacoreluz/"><i class="fab fa-instagram fa-2x"></i></a>
-                                    </span>
-        
-                                    <span class="centralizar-rede-social">
-                                        <a href="https://www.facebook.com/opticacoreluz"><i class="fab fa-facebook-square fa-2x"></i></a>
-                                    </span>  <!--Fim redes sociais-->
-                                </div>  
+                        <div class="col-md-6">
+                            <p class="branco">
+                                A oração é a principal maneira de nos comunicar com Deus. A oração é poderosa e eficaz, e ela é uma das principais armas de todo aquele que crê.
+                            </p> </br></br>
+                            <p>
+                                Não estejais inquietos por coisa alguma; antes as vossas petições sejam em tudo conhecidas diante de Deus pela oração e súplica, com ação de graças.
+                            </p>
+                            <p>(Filipenses 4:6)</p>
+                        </div>  
                         
                         <div class="col-md-6">
                             <form>
@@ -210,8 +200,18 @@
                                     </div>
 
                                     <div class="form-group">
+                                        <label class="branco" for="telefone">Telefone:</label>
+                                        <input class="form-control" type="text" name="telefone" id="telefone" placeholder="digite seu Telefone">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="branco" for="assunto">Digite a Área:</label>
+                                        <input class="form-control" type="text" name="assunto" id="assunto" placeholder="Área (Familia, Trabalho, Financeiro, Relacionamento, etc)">
+                                    </div>
+
+                                    <div class="form-group">
                                         <label class="branco" for="mensagem">Mensagem:</label>
-                                        <textarea class="form-control" name="mensagem" id="mensagem" rows="5"></textarea>
+                                        <textarea class="form-control" name="mensagem" id="mensagem" rows="5" placeholder="Digite aqui seu Pedido"></textarea>
                                     </div>
                                     
                                     <div class="btn-espaco">
@@ -219,13 +219,35 @@
                                     </div>  
                                 </fieldset>
                             </form>
-                        </div>
-
-                        
+                        </div>    
                     </div>
                 </div>
-            </section
-    
+            </section> <!--Fim seção 04-->
+
+            <!--Rodapé-->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="img/logoPreto.png" width="80">
+                        </div>
+
+                        <div class="col-md-8">
+                            <p class="vertical">Todos os direitos são reservados - Site desenvolvido por <strong>Weslen Almeida</strong></p>
+                        </div>
+
+                        <div class="col-md-2">
+                            <p class="vertical">
+                                <a href="https://www.facebook.com/adpalavraepoder">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </footer><!--Fim rodapé-->
+
     <!--JavaScript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
