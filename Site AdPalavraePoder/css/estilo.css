@@ -37,23 +37,41 @@ section{
     overflow-y: hidden;
 }
 
-.fundo h1{
+.sobre-fundo{
+    background: url(../img/sobre.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 520px;
+    background-repeat: repeat-x;
+    overflow-y: hidden;
+}
+
+.devocional-fundo{
+    background: url(../img/devocional.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 520px;
+    background-repeat: repeat-x;
+    overflow-y: hidden;
+}
+
+.fundo h1, .sobre-fundo h1, .devocional-fundo h1{
     font-size: 6em;
     text-align: center;
     color: #daa520;
 }
 
-.fundo h3{
+.fundo h3, .sobre-fundo h3, .devocional-fundo h3{
     text-align: center;
     color: white;
 }
 
-.fundo h4{
+.fundo h4, .sobre-fundo h4, .devocional-fundo h4{
     text-align: center;
     color: white;
 }
 
-.fundo p{
+.fundo p, .sobre-fundo p, .devocional-fundo p{
     color: white;
     text-align: center;
     font-size: 1.4em;
@@ -80,6 +98,12 @@ section{
 
 .preto{
     color: black;
+}
+
+.maiscula{
+    text-transform: uppercase;
+    padding: 60px 0 10px 0;
+    text-align: center;
 }
 
 /**************Listas links*******************/
