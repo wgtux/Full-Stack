@@ -3,13 +3,14 @@ class CalcController{
     constructor(){
 
         //criando atributos
+        this._operation = []
         this._locale = 'pt-BR'
         this._displayCalcEl = document.querySelector("#display")
         this._dateEl = document.querySelector("#data")
         this._timeEl = document.querySelector("#hora")
         this._currentDate
         this.initialize()
-        this.initButtonsEvents();
+        this.initButtonsEvents()
 
     }
 
@@ -25,32 +26,106 @@ class CalcController{
         },1000) 
     }
 
-    addEventListenerAll(element, event, fn){
+    addEventListenerAll(element, events, fn){
 
-        events.split(' ').forEach(event => {
+            events.split(' ').forEach(event => {
 
-            element.addEventListener(event, fn, false)
-        })
+                element.addEventListener(event, fn, false);
+            });
     }
 
-      //selecionar os botões da calculadora
+ //limpar todas entradas   
+    clearAll(){
+        this._operation = []
+    }
+
+//limpar ultima entrada
+    clearEntry(){
+        this._operation.pop()
+    }
+
+//mensagem de erro no display
+    setError(){
+        this.displayCalc = "Error"
+    }
+
+//adicionando operação
+    addOperation(value){
+        this._operation.push(value)
+        console.log(this._operation)
+    }
+
+//adicionando os digitos e operações
+    execBtn(value){
+        
+        switch(value){
+
+            case 'ac':
+                this.clearAll();
+                break
+            case 'ce':
+                this.clearEntry();
+                break
+            case 'soma':
+
+                break
+            case 'soma':
+
+                break
+            case 'subtracao':
+
+                break
+            case 'divisao':
+
+                break
+            case 'multiplicacao':
+
+                break
+            case 'porcento':
+
+                break
+            case 'igual':
+
+                break
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':    
+            case '9':
+                this.addOperation(parseInt(value))
+                break
+            default:
+                this.setError();
+                break
+        }
+
+    }
+
+    //selecionar os botões da calculadora
     initButtonsEvents(){
         let buttons = document.querySelectorAll("#buttons > g, #parts > g")
         //percorrendo os botões
         buttons.forEach((btn, index)=>{
 
-            this.addEventListenerAll("click drag", e => {
+            this.addEventListenerAll(btn, "click drag", e => {
             
-                console.log(btn.className.baseVal.replace("btn-", ""))
+                let textBtn = btn.className.baseVal.replace("btn-", "")
+
+                this.execBtn(textBtn)
     
-            })
+            });
 
             this.addEventListenerAll(btn, "mouseover mouseup mousedown", e =>{
 
                 btn.style.cursor = "pointer"
 
-            })
-        })
+            });
+        });
     }
 
     setDisplayDateTime(){
