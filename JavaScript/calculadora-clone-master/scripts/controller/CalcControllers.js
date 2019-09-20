@@ -3,6 +3,8 @@ class CalcController{
     constructor(){
 
         //criando atributos
+        this._lastOperator =''
+        this._lastNumber = ''
         this._operation = []
         this._locale = 'pt-BR'
         this._displayCalcEl = document.querySelector("#display")
@@ -36,19 +38,19 @@ class CalcController{
             });
     }
 
- //limpar todas entradas   
+    //limpar todas entradas   
     clearAll(){
         this._operation = []
         this.setLastNumberToDisplay()
     }
 
-//limpar ultima entrada
+    //limpar ultima entrada
     clearEntry(){
         this._operation.pop()
         this.setLastNumberToDisplay()
     }
 
-//Verificando a ultma operação
+    //Verificando a ultma operação
     getLastOperation(){
         return this._operation[this._operation.length-1]
     }
@@ -58,12 +60,12 @@ class CalcController{
 
     }
 
- //Verifica se é operador   
+    //Verifica se é operador   
     isOperation(value){
        return (['+','-','/','%','*'].indexOf(value) > -1)
     }
 
-//Verfica se tem 3 itens no array para realizar o calculo
+    //Verfica se tem 3 itens no array para realizar o calculo
     pushOperation(value){
         this._operation.push(value)
 
@@ -73,21 +75,37 @@ class CalcController{
         }
     }    
 
+    getResult(){
+        return eval(this._operation.join(""))
+    }
     
     calc(){
         let last=''
 
-        if (this._operation.length > 3){
-            last = this._operation.pop()
+        this._lastOperator = this.getLastItem()
+
+        if (this._operation.length < 3){
+
+            let firtItem = this._operation[0]
+            this._operation = [firtItem, this._lastOperator, this._lastNumber]
         }
 
-        let result = eval(this._operation.join(""))
+        if (this._operation.length > 3){
+            last = this._operation.pop()
+            this._lastNumber = this. getResult()
+        } 
+        
+        else if (this._operation.length == 3){
+            this._lastNumber = this.getLastItem(false)
+        }
+
+        let result = this. getResult()
 
         if(last == '%'){
 
             result /=100
             this._operation=[result]
-        
+                                               
         } else{
         
             this._operation = [result]
@@ -96,28 +114,40 @@ class CalcController{
         }
        
         this.setLastNumberToDisplay()
-
-    }
-
-//adicionando numero no display
-    setLastNumberToDisplay(){
-        
-        let lastNumber
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    
+    getLastItem(isOperator = true){
+    
+        let lastItem
 
         for (let i = this._operation.length-1; i>=0; i--){
 
-            if (!this.isOperation(this._operation[i])){
-                lastNumber = this._operation[i]
-                break
+            if (this.isOperator(this._operation[i]) == isOperator){
+                lastItem = this._operation[i]
+                break 
             }
         }
 
-        if (!lastNumber) lastNumber=0
+        if (!lastItem){
+
+                lastItem = (isOperator) ? this._lastOperator : this._lastNumber
+
+        }
+        
+        return lastItem
+    }
+    
+    //adicionando numero no display
+    setLastNumberToDisplay(){
+        
+        let lastNumber = this.getLastItem(false)
+
+        if (!lastNumber) lastNumber = 0
         this.displayCalc=lastNumber
     }
     
 
-//adicionando operação
+    //adicionando operação
     addOperation(value){
         
         if(isNaN(this.getLastOperation())){
@@ -154,12 +184,12 @@ class CalcController{
         console.log(this._operation)
     }
 
-//mensagem de erro no display
+    //mensagem de erro no display
     setError(){
         this.displayCalc = "Error"
     }
 
-//adicionando os digitos e operações
+    //adicionando os digitos e operações
     execBtn(value){
         
         switch(value){
