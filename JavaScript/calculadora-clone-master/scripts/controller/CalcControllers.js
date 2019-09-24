@@ -41,6 +41,9 @@ class CalcController{
     //limpar todas entradas   
     clearAll(){
         this._operation = []
+        this._lastNumber = ''
+        this._lastOperator = ''
+
         this.setLastNumberToDisplay()
     }
 
@@ -122,7 +125,7 @@ class CalcController{
 
         for (let i = this._operation.length-1; i>=0; i--){
 
-            if (this.isOperator(this._operation[i]) == isOperator){
+            if (this.isOperation(this._operation[i]) == isOperator){
                 lastItem = this._operation[i]
                 break 
             }
@@ -156,11 +159,7 @@ class CalcController{
                 //trocar operador
                 this.setLastOperation(value)
 
-            } else if(isNaN(value)){
-                //outra coisa
-                console.log('outra coisa',value)
-
-            }else{
+            } else{
                 this.pushOperation(value)
                 this.setLastNumberToDisplay()
 
@@ -174,7 +173,7 @@ class CalcController{
 
             } else{
                 let newValue = this.getLastOperation().toString() + value.toString()
-                this.setLastOperation(parseInt(newValue))
+                this.setLastOperation((newValue))
                 //mostrar numero no display
                 this.setLastNumberToDisplay()
             }
@@ -187,6 +186,22 @@ class CalcController{
     //mensagem de erro no display
     setError(){
         this.displayCalc = "Error"
+    }
+
+    addDot(){
+
+        let lastOperation = this.getLastOperation()
+
+        if (typeof lastOperation === 'string' && lastOperation.split('').indexOf('.') > -1) return
+
+        if (this.isOperation(lastOperation) || !lastOperation){
+            this.pushOperation('0.')
+        } else{
+            this.setLastOperation(lastOperation.toString() + '.')
+        }
+
+        this.setLastNumberToDisplay()
+
     }
 
     //adicionando os digitos e operações
@@ -227,7 +242,7 @@ class CalcController{
                 break
 
             case 'ponto':
-            this.addOperation('.')
+                this.addDot()
                 break
             case '0':
             case '1':
