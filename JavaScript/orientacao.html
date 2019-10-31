@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Orientação a Objeto</title>
+        <meta charset="utf-8">
+
+        <script>
+            class Produto{
+                constructor(nome, preco){
+                    this.nome = nome
+                    this.valor = preco
+                }
+
+                verDesc(){
+                    console.log(`${this.nome} por apenas ${this.valor}`)
+                }   
+            }
+
+            let produto = new Produto('Oculos', 200)
+            produto.verDesc()
+
+            let carro = new Produto('Palio', 1000)
+            carro.verDesc()
+         
+        </script>
+
+    </head>
+
+    <body>
+    
+    </body>
+</html>
