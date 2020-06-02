@@ -16,8 +16,8 @@ if($_FILES['arquivo']['type'] != '' && $_FILES['arquivo']['error'] == 0){
     //verifica se o arquivo recebido é do tipo imagem
     if(in_array($_FILES['arquivo']['type'], $arqpermitidos)){
         $nome = md5(time().rand(1,100)).'.jpg';
-        move_uploaded_file($_FILES['arquivo']['tmp_name'],'imagens/'.$nome);
-        
+        move_uploaded_file($_FILES['arquivo']['tmp_name'],'./imagens/'.$nome);
+        //var_dump(move_uploaded_file($_FILES['arquivo']['tmp_name'],'./imagens/'.$nome));
         echo "Arquivo Carregado com sucesso!!!";
     }
    else{
