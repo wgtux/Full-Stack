@@ -48,7 +48,7 @@ echo "Post 2 = ".$post2->likes." Likes"." - Autor = ".$post2->getAutor()."<br>";
 
 class Post{
     private int $id;
-    private int $like = 0;
+    private int $like;
 
     public function setId($i){
         $this->$id = $i;
@@ -71,22 +71,40 @@ class Foto extends Post{
     private $url;
 
     //method construtor, criando id
-    public function__construct($id){
-        $this->setId($id);
-    }
+    //function__construct(int $id) {
+    //    $this->setId($id);
+    //}
 
     public function setUrl($u){
         $this->$url = $u;
     }
 
     public function getUrl(){
-        $this->$url;
+        return $this->$url;
     }
 }
 
-$foto = new Foto(10);
-$foto->$setLike(20);
-$foto->setUrl(fotoabc);
+class Texto extends Post {
+    private $publicacao;
 
-echo "Foto #".getId()." - "."url: ".getUrl()." - "."Likes: ".getLikes();
+    public function setPub($texto){
+        $this->$publicacao = $texto;
+    }
+
+    public function getPub(){
+        return $this->$publicacao; 
+    }
+}
+
+$foto = new Foto();
+$foto->setId(10);
+$foto->setLike(20);
+$foto->setUrl('fotoabc');
+
+$texto = new Texto();
+$texto->setPub('Meu primeiro post');
+
+
+echo "Foto #".$foto.getId()." - url: ".$foto.getUrl()." - Likes: ".$foto.getLikes()." - Post: ".$texto.getPub();
+
 ?>
