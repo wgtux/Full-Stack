@@ -1,5 +1,4 @@
 <?php
-/*
 class Post{
     //propriedades tipadas
     private int $id;
@@ -7,9 +6,6 @@ class Post{
     public array $coments = [];
     private string $autor;
 
-    //metodo construtor
-    
-    
     //method public
     public function aumentarLikes(){
         //this, se referencia a ele mesmo.
@@ -39,72 +35,6 @@ $post2 = new Post();
 $post1->setAutor('Pi')."<br>";
 $post2->setAutor("Weslen Almeida")."<br>";
 
-
 echo "Post 1 = ".$post1->likes." Likes"." - Autor = ".$post1->getAutor()."<br>";
 echo "Post 2 = ".$post2->likes." Likes"." - Autor = ".$post2->getAutor()."<br>";
-*/
-
-//CONCEITO DE HERANÇA
-
-class Post{
-    private int $id;
-    private int $like;
-
-    public function setId($i){
-        $this->$id = $i;
-    }
-
-    public function getId(){
-        return $this->$id;
-    }
-
-    public function setLikes($li){
-        $this->$like = $li;    
-    }
-
-    public function getLikes(){
-        return $this->$like;
-    }
-}
-
-class Foto extends Post{
-    private $url;
-
-    //method construtor, criando id
-    //function__construct(int $id) {
-    //    $this->setId($id);
-    //}
-
-    public function setUrl($u){
-        $this->$url = $u;
-    }
-
-    public function getUrl(){
-        return $this->$url;
-    }
-}
-
-class Texto extends Post {
-    private $publicacao;
-
-    public function setPub($texto){
-        $this->$publicacao = $texto;
-    }
-
-    public function getPub(){
-        return $this->$publicacao; 
-    }
-}
-
-$foto = new Foto();
-$foto->setId(10);
-$foto->setLike(20);
-$foto->setUrl('fotoabc');
-
-$texto = new Texto();
-$texto->setPub('Meu primeiro post');
-
-
-echo "Foto #".$foto.getId()." - url: ".$foto.getUrl()." - Likes: ".$foto.getLikes()." - Post: ".$texto.getPub();
-
 ?>
