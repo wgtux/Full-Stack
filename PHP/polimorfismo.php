@@ -5,15 +5,15 @@ interface Forma{
     public function getTipo();
 }
 
-class Cirulo implements Forma{
+class Circulo implements Forma{
     private $raio;
 
     public function __construct($r){
-        $this->$raio = $r;
+        $this->raio = $r;
     }
 
     public function getArea(){
-        return Pi() * ($this->$raio * $this->$raio);
+        return Pi() * ($this->raio * $this->raio);
     }
 
     public function getTipo(){
@@ -26,12 +26,12 @@ class Quadrado implements Forma{
     private $altura;
 
     public function __construct($l, $a){
-        $this->$largura = $l;
-        $this->$altura = $a;
+        $this->largura = $l;
+        $this->altura = $a;
     }
 
     public function getArea(){
-        return $this->$largura * $this->$altura;
+        return $this->largura * $this->altura;
     }
 
     public function getTipo(){
@@ -48,8 +48,8 @@ $objetos = [
 ];
 
 foreach($objetos as $objeto){
-    $tipo = $this->getTipo();
-    $area = $this->getArea();
+    $tipo = $objeto->getTipo();
+    $area = $objeto->getArea();
 
 echo "AREA ".$tipo." : ".$area."<br>";
 }
