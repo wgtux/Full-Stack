@@ -1,8 +1,15 @@
 <?php
 require 'config.php';
+$list = [];
+
+$sql = $pdo->query("SELECT * FROM usuarios");
+
+if ($sql->rowCount() > 0){
+    $list = $sql->fetchAll(PDO::FETCH_ASSOC);
+}
 
 ?>
-
+<h1>Lista de Usuarios do Sistema</h1>
 <br>
 <a href="adicionar.php">Adicionar Novo Usuario</a>
 <br>
@@ -14,4 +21,16 @@ require 'config.php';
         <th> EMAIL</th>
         <th> AÇÕES</th>
     </tr>
+    <?php foreach($list as $users):?>
+        <tr>
+            <td> <?=$users['id']; ?> </td>
+            <td> <?=$users['name']; ?> </td>
+            <td> <?=$users['email']; ?> </td>
+            <td> 
+                <a href="editar.php?id=<?=$users['id'];?>"> [Editar] </a>
+                <a href="excluir.php?id=<?=$users['id'];?>"> [Excluir] </a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+
 </table>
