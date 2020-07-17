@@ -10,6 +10,7 @@ if ($sql->rowCount() > 0){
 
 ?>
 <h1>Lista de Usuarios do Sistema</h1>
+<h3>Conceito de CRUD</h3>
 <br>
 <a href="adicionar.php">Adicionar Novo Usuario</a>
 <br>
@@ -28,7 +29,7 @@ if ($sql->rowCount() > 0){
             <td> <?=$users['email']; ?> </td>
             <td> 
                 <a href="editar.php?id=<?=$users['id'];?>"> [Editar] </a>
-                <a href="excluir.php?id=<?=$users['id'];?>"> [Excluir] </a>
+            <a href="excluir.php?id=<?=$users['id'];?>" onclick="return confirm('Tem certeza que desja excluir?')"> [Excluir] </a>
             </td>
         </tr>
     <?php endforeach; ?>
