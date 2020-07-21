@@ -4,7 +4,7 @@ class Usuario
 {
     private $id;
     private $name;
-    private $email;
+    private string $email;
 
     public function getId()
     {
@@ -37,8 +37,9 @@ class Usuario
     //INTERFACES
     interface UsuarioDAO
     {
-        public function create(Usuario $u);
+        public function add(Usuario $u);
         public function findAll();
+        public function findByEmail($email);
         public function findById($id);
         public function update(Usuario $u);
         public function delete($id);

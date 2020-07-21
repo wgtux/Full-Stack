@@ -28,7 +28,7 @@ $list = $usuarioDAO->findAll();
             <td> <?=$users->getEmail(); ?> </td>
             <td> 
                 <a href="editar.php?id=<?=$users->getId();?>"> [Editar] </a>
-            <a href="excluir.php?id=<?=$users->getId();?>" onclick="return confirm('Tem certeza que desja excluir?')"> [Excluir] </a>
+                <a href="excluir.php?id=<?=$users->getId();?>" onclick="return confirm('Tem certeza que desja excluir?')"> [Excluir] </a>
             </td>
         </tr>
     <?php endforeach; ?>
