@@ -14,10 +14,10 @@ Qual a estrutura de dados?
 -- body
 
 Quais os endpoints?
-(METODO) /url (PARAMETROS)
-- (GET) /api/notes
-- (GET) /api/note/id
-- (POST) /api/note (title, body)
-- (PUT) /api/note/id (title, body) 
-- (DELETE) /api/note/id
+(METODO) /url (PARAMETROS) ********* ESTRUTURAL
+- (GET) /api/notes  **************** api/getall.php
+- (GET) /api/note/id *************** api/get.php?id=123
+- (POST) /api/note (title, body) *** api/insert.php (title, body)
+- (PUT) /api/note/id (title, body) * api/update.php (id, title, body)
+- (DELETE) /api/note/id ************ api/delete.php (id)
 
