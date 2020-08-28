@@ -7,4 +7,7 @@ $db_pas = "";
 
 $pdo = new PDO("mysql:dbname=$db_name; host=$db_host", $db_user, $db_pas);
 
-$array = [];
+$array = [
+    'error' => '',
+    'pong' => true
+];
